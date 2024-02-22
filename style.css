@@ -1,3 +1,22 @@
-body {
-    background-image: linear-gradient(135deg, #c850c0, #4158d0);
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0pt 0pt 0pt 0pt;
+    background-color: #292929;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#head_img {
+    border-radius: 50%;
+    height: 7em;
+}
+.my {
+    font-size: 1.5em;
+    width: 25%;
+    height: 100%;
+    border-radius: 2%;
+    color:white;
+    background-color: #0c0c0c;
+    padding: 6em 2em;
+    text-align: center;
 }
