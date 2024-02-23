@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "outDir": "./script",
+        "rootDir": "ts_src",
+        "sourceMap": true,
+        "strict": true,
+        "strictNullChecks": true
+    }
+}
