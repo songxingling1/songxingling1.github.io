@@ -2,7 +2,7 @@ html,body {
     height: 100%;
     width: 100%;
     margin: 0pt 0pt 0pt 0pt;
-    background-color: #292929;
+    background-color: #3a3a3a;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -14,9 +14,9 @@ html,body {
     font-size: 1.5em;
     width: 25%;
     height: 100%;
-    border-radius: 2%;
+    border-radius: 0pt 2% 2% 0;
     color:white;
-    background-color: #0c0c0c;
+    background-color: #242424;
     padding: 6em 2em;
     text-align: center;
 }
