@@ -1,45 +1,83 @@
 body {
     margin: 0pt 0pt 0pt 0pt;
-    background-color: #3a3a3a;
+    background-color: #232433;
+    height: 100vh;
+    width: 100vw;
+    color:white;
 }
 #head_img {
     border-radius: 50%;
-    height: 7em;
-}
-.my {
-    font-size: 1.5em;
-    height: 100vh;
-    border-radius: 0pt 2% 2% 0;
-    color:white;
-    background-color: #242424;
-    padding: 6em 2em;
-    text-align: center;
-    flex:0 0 25vw;
-    box-sizing: border-box;
+    height: 5em;
 }
 #home_page {
     display:flex;
     height: 100vh;
-    flex-direction: row;
-    justify-items: center;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    box-sizing:border-box;
+    padding: 5% 5% 5% 5%;
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
 }
-#buttons {
+#name {
+    margin: 0.8em 0em 0em 0em;
+}
+hr {
+    width: 90vw;
+    flex:0 0 0.01em;
+}
+div#scentens {
+    font-size: 0.6em;
+    color:#9697af;
+    text-align: left;
+}
+div#author {
+    font-size: 0.6em;
+    color:#9697af;
+    text-align: right;
+}
+#scenten {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    flex: 0 0 75vw;
 }
-p.button {
-    background-color: #2c2c2c;
-    height: 50pt;
-    width: 70vw;
-    border-radius: 1em/1em;
-    text-align: center;
+.ying1 {
+    text-align: left;
+    width: 90vw;
+    color: #414455;
+    font-size: 2em;
 }
-a.button {
-    color:#ffffff;
-    text-decoration: none;
-    font-size: 2.5em;
-    font-family: Lucida Console;
+.ying2 {
+    text-align: right;
+    width: 90vw;
+    color: #414455;
+    font-size: 2em;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.button {
+    width: 8vw;
+    height: 4.5vh;
+    flex: 0 0 2vh;
+    font-size: 0.7em;
+    background-color: #ffffff00;
+    border-radius: 7pt/7pt;
+    border: 2pt solid #a7a7a7;
+    transition-duration: 0.4s;
+    color: white;
+}
+.button:hover {
+    width: 8vw;
+    height: 4.5vh;
+    flex: 0 0 2vh;
+    font-size: 0.7em;
+    background-color: #a7a7a7;
+    border-radius: 7pt/7pt;
+    border: 2pt solid #a7a7a7;
+    transition-duration: 0.4s;
+    color: black;
 }
