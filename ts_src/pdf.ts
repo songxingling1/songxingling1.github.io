@@ -33,6 +33,10 @@ async function writePDF(): Promise<void> {
             a.href = `../lib/pdfjs/web/viewer.html?file=/${val.path}`;
             a.innerHTML = `<button class="pdf">${val.name}</button>`;
             links?.appendChild(a);
+            let b: HTMLAnchorElement = document.createElement('a');
+            b.href = `${val.download_url}`;
+            b.innerHTML = `<button class="download">下载</button>`;
+            links?.appendChild(b);
             links?.appendChild(document.createElement('br'));
             links?.appendChild(document.createElement('br'));
         })

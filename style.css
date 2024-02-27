@@ -100,9 +100,11 @@ div#author {
     border: 2pt solid #a7a7a7;
     transition-duration: 0.4s;
     color: white;
+    margin-left: 5pt;
+    margin-right: 5pt;
 }
 .pdf:hover {
-    width: 10vw;
+    width: 20vw;
     height: 4.5vh;
     flex: 0 0 2vh;
     font-size: 0.7em;
@@ -111,4 +113,32 @@ div#author {
     border: 2pt solid #ffffff;
     transition-duration: 0.4s;
     color: black;
+    margin-left: 5pt;
+    margin-right: 5pt;
+}
+.download {
+    width: 8vw;
+    height: 4.5vh;
+    flex: 0 0 2vh;
+    font-size: 0.7em;
+    background-color: #ffffff00;
+    border-radius: 7pt/7pt;
+    border: 2pt solid #a7a7a7;
+    transition-duration: 0.4s;
+    color: white;
+    margin-left: 5pt;
+    margin-right: 5pt;
+}
+.download:hover {
+    width: 8vw;
+    height: 4.5vh;
+    flex: 0 0 2vh;
+    font-size: 0.7em;
+    background-color: #ffffff;
+    border-radius: 7pt/7pt;
+    border: 2pt solid #ffffff;
+    transition-duration: 0.4s;
+    color: black;
+    margin-left: 5pt;
+    margin-right: 5pt;
 }

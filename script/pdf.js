@@ -29,6 +29,10 @@ function writePDF() {
                 a.href = `../lib/pdfjs/web/viewer.html?file=/${val.path}`;
                 a.innerHTML = `<button class="pdf">${val.name}</button>`;
                 links === null || links === void 0 ? void 0 : links.appendChild(a);
+                let b = document.createElement('a');
+                b.href = `${val.download_url}`;
+                b.innerHTML = `<button class="download">下载</button>`;
+                links === null || links === void 0 ? void 0 : links.appendChild(b);
                 links === null || links === void 0 ? void 0 : links.appendChild(document.createElement('br'));
                 links === null || links === void 0 ? void 0 : links.appendChild(document.createElement('br'));
             });
