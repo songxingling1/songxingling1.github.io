@@ -25,13 +25,16 @@ async function getPDF<T>(): Promise<T> {
     return Json;
 }
 async function writePDF(): Promise<void> {
+    links?.appendChild(document.createElement('br'));
     try {
         const s: file[] = await getPDF<file[]>();
         s.forEach((val: file) => {
             let a: HTMLAnchorElement = document.createElement('a');
             a.href = `../lib/pdfjs/web/viewer.html?file=/${val.path}`;
-            a.innerHTML = `${val.name}<br>`;
+            a.innerHTML = `<button class="pdf">${val.name}</button>`;
             links?.appendChild(a);
+            links?.appendChild(document.createElement('br'));
+            links?.appendChild(document.createElement('br'));
         })
     } catch (error: Error | unknown) {
         let messege:string;

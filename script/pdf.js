@@ -21,13 +21,16 @@ function getPDF() {
 }
 function writePDF() {
     return __awaiter(this, void 0, void 0, function* () {
+        links === null || links === void 0 ? void 0 : links.appendChild(document.createElement('br'));
         try {
             const s = yield getPDF();
             s.forEach((val) => {
                 let a = document.createElement('a');
                 a.href = `../lib/pdfjs/web/viewer.html?file=/${val.path}`;
-                a.innerHTML = `${val.name}<br>`;
+                a.innerHTML = `<button class="pdf">${val.name}</button>`;
                 links === null || links === void 0 ? void 0 : links.appendChild(a);
+                links === null || links === void 0 ? void 0 : links.appendChild(document.createElement('br'));
+                links === null || links === void 0 ? void 0 : links.appendChild(document.createElement('br'));
             });
         }
         catch (error) {

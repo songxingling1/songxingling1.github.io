@@ -81,3 +81,34 @@ div#author {
     transition-duration: 0.4s;
     color: black;
 }
+#links {
+    width: 90vw;
+    background-color: #3c3e55;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 5vw;
+    border-radius: 8pt/8pt;
+}
+.pdf {
+    width: 20vw;
+    height: 4.5vh;
+    flex: 0 0 2vh;
+    font-size: 0.7em;
+    background-color: #ffffff00;
+    border-radius: 7pt/7pt;
+    border: 2pt solid #a7a7a7;
+    transition-duration: 0.4s;
+    color: white;
+}
+.pdf:hover {
+    width: 10vw;
+    height: 4.5vh;
+    flex: 0 0 2vh;
+    font-size: 0.7em;
+    background-color: #ffffff;
+    border-radius: 7pt/7pt;
+    border: 2pt solid #ffffff;
+    transition-duration: 0.4s;
+    color: black;
+}
