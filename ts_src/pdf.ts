@@ -31,7 +31,7 @@ async function writePDF(): Promise<void> {
         s.forEach((val: file) => {
             let a: HTMLAnchorElement = document.createElement('a');
             a.href = `../lib/pdfjs/web/viewer.html?file=/${val.path}`;
-            a.innerHTML = `<button class="pdf">${val.name}</button>`;
+            a.innerHTML = `<button class="pdf"><span>${val.name}</span></button>`;
             links?.appendChild(a);
             let b: HTMLAnchorElement = document.createElement('a');
             b.href = `${val.download_url}`;

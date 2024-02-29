@@ -27,7 +27,7 @@ function writePDF() {
             s.forEach((val) => {
                 let a = document.createElement('a');
                 a.href = `../lib/pdfjs/web/viewer.html?file=/${val.path}`;
-                a.innerHTML = `<button class="pdf">${val.name}</button>`;
+                a.innerHTML = `<button class="pdf"><span>${val.name}</span></button>`;
                 links === null || links === void 0 ? void 0 : links.appendChild(a);
                 let b = document.createElement('a');
                 b.href = `${val.download_url}`;

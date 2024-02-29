@@ -116,6 +116,27 @@ div#author {
     margin-left: 5pt;
     margin-right: 5pt;
 }
+.pdf span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+.pdf span::after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+.pdf:hover span {
+    padding-right: 25px;
+}
+.pdf:hover span::after {
+    opacity: 1;
+    right: 0;
+}
 .download {
     width: 8vw;
     height: 4.5vh;
