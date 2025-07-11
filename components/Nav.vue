@@ -22,7 +22,7 @@ const links = [
 ]
 </script>
 <template>
-    <VCard  class="elevation-4 rounded-0">
+    <VCard class="elevation-4 rounded-0">
         <VCard color="primary" class="rounded-0 text-center pt-2 pb-4">
             <VCardTitle>
                 SXL's Blog
