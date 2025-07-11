@@ -1,23 +1,11 @@
 <script setup>
-import { VApp,VCard } from 'vuetify/components';
+import { VSheet } from 'vuetify/components';
 import { useTheme } from 'vuetify';
 const theme = useTheme()
 </script>
 <template>
-    <VApp :style="{ background: theme.current.value.colors.background }" class="text-center">
-        <VCard id="content" class="elevation-4">
-            <template #title>
-                Oops!
-            </template>
-            <template #subtitle>
-                404 Not Found
-            </template>
-        </VCard>
-    </VApp>
+    <VSheet color="transparent" class="d-flex align-center justify-center test-center mt-12 flex-column">
+        <h1 class="text-h2 font-weight-bold">Oops!</h1>
+        <p class="text-h4 mt-8">The page you're looking for can't be found.</p>
+    </VSheet>
 </template>
-<style scoped>
-#content {
-    margin: auto;
-    width: 40rem;
-}
-</style>
