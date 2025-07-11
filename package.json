@@ -1,0 +1,21 @@
+{
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "My Blog",
+    "main": "index.js",
+    "license": "MIT",
+    "author": "Xinglin Song",
+    "dependencies": {
+        "@mdi/font": "^7.4.47",
+        "css-loader": "^7.1.2",
+        "html-webpack-plugin": "^5.6.3",
+        "mini-css-extract-plugin": "^2.9.2",
+        "vue": "^3.5.17",
+        "vue-loader": "^17.4.2",
+        "vue-router": "^4.5.1",
+        "vuetify": "^3.9.0",
+        "webpack": "^5.100.0",
+        "webpack-cli": "^6.0.1",
+        "webpack-merge": "^6.0.1"
+    }
+}
