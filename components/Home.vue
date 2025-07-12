@@ -10,7 +10,7 @@ const showPagination = ref(true)
 const pageCount = ref(1)
 const page = ref(1)
 onMounted(async ()=>{
-    const res = await fetch('/document.json')
+    const res = await fetch('/assets/document.json')
     articles = await res.json()
     articles = articles.data
     if(articles.length <= 10) showedArticles.value = articles
@@ -30,7 +30,7 @@ function updatePage(curPage) {
 </script>
 <template>
 <div>
-    <VCard class="elevation-4 rounded-0 mb-3 pt-5 pb-5" v-for="(item,index) in showedArticles" :key="index">
+    <VCard class="elevation-2 rounded-0 mb-3 pt-5 pb-5" v-for="(item,index) in showedArticles" :key="index">
         <VCardTitle class="text-center">
             <RouterLink :to="'/posts/' + item.name" class="text-h5 text-weight-medium opacity-100 pa-0 link">
                 {{item.name}}
@@ -42,7 +42,7 @@ function updatePage(curPage) {
         </VCardSubtitle>
         <VCardText class="pl-8 pr-8">{{ item.summary }}</VCardText>
     </VCard>
-    <VCard v-if="showPagination" class="elevation-4 rounded-0">
+    <VCard v-if="showPagination" class="elevation-2 rounded-0">
         <VPagination :length="pageCount" total-visible="3" v-model="page" @update:modelValue="updatePage(page)" ></VPagination>
     </VCard>
 </div>

@@ -7,8 +7,11 @@ const theme = useTheme()
 </script>
 <template>
     <VApp :style="{ background: theme.current.value.colors.background }">
-        <div id="container" class="d-flex flex-nowrap align-start ga-3">
-            <Nav class="flex-0-0 nav"></Nav>
+        <div id="container" class="d-flex flex-nowrap ga-3">
+            <div class="flex-0-0" id="sidebar">
+                <Nav></Nav>
+                <RouterView name="side" id="side" class="mt-3"></RouterView>
+            </div>
             <div class="flex-fill">
                 <RouterView></RouterView>
                 <Footer></Footer>
@@ -26,7 +29,11 @@ const theme = useTheme()
         width: 87rem;
     }
 }
-.nav {
+#sidebar {
     width: 15rem;
+}
+#side {
+    position: sticky;
+    top: 12px;
 }
 </style>

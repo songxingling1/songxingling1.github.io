@@ -4,9 +4,10 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import App from '@/App'
 import NotFound from '@/NotFound'
 import Home from '@/Home'
+import Notice from '@/Notice'
 const routes = [
-    { path: '/', component: Home},
-    { path: '/:path(.*)', component: NotFound}
+    { path: '/', components: {default: Home,side:Notice}},
+    { path: '/:path(.*)', components: {default: NotFound,side:Notice}}
 ]
 createApp(App).use(vuetify).use(createRouter({
     history: createWebHashHistory(),
