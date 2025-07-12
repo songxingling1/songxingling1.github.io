@@ -6,20 +6,23 @@ const theme = useTheme()
 </script>
 <template>
     <VApp :style="{ background: theme.current.value.colors.background }">
-        <VRow id="content" dense>
-            <VCol cols="2">
-                <Nav></Nav>
-            </VCol>
-            <VCol cols="10">
-                <RouterView></RouterView>
-            </VCol>
-        </VRow>
+        <div id="container" class="d-flex flex-nowrap align-start ga-3">
+            <Nav class="flex-0-0 nav"></Nav>
+            <RouterView class="flex-fill"></RouterView>
+        </div>
     </VApp>
 </template>
 <style scoped>
-#content {
-    margin-left: auto;
-    margin-right: auto;
-    width: 85rem;
+#container {
+    width: calc(100% - 1rem);
+    margin: 0 auto;
+}
+@media (min-width: 89rem) {
+    #container {
+        width: 87rem;
+    }
+}
+.nav {
+    width: 15rem;
 }
 </style>
