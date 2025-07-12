@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted, ref } from 'vue';
-import { VCard,VCardTitle,VCardSubtitle,VCardText } from 'vuetify/components';
+import { VCard,VCardTitle,VCardSubtitle,VCardText,VIcon } from 'vuetify/components';
 import { useTheme } from 'vuetify';
 const articles = ref([])
 const theme = useTheme()
@@ -22,8 +22,11 @@ function getDate(timestamp) {
                 {{item.name}}
             </RouterLink>
         </VCardTitle>
-        <VCardSubtitle class="text-center">Posted on {{getDate(item.time)}}</VCardSubtitle>
-        <VCardText>{{ item.summary }}</VCardText>
+        <VCardSubtitle class="text-center">
+            <VIcon icon="mdi-calendar-blank"></VIcon>
+            Posted on {{getDate(item.time)}}
+        </VCardSubtitle>
+        <VCardText class="pl-8 pr-8">{{ item.summary }}</VCardText>
     </VCard>
 </div>
 </template>
