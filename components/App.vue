@@ -1,14 +1,18 @@
 <script setup>
-import { VApp,VRow,VCol } from 'vuetify/components';
+import { VApp } from 'vuetify/components';
 import { useTheme } from 'vuetify';
-import Nav from './Nav.vue'
+import Nav from './Nav'
+import Footer from './Footer'
 const theme = useTheme()
 </script>
 <template>
     <VApp :style="{ background: theme.current.value.colors.background }">
         <div id="container" class="d-flex flex-nowrap align-start ga-3">
             <Nav class="flex-0-0 nav"></Nav>
-            <RouterView class="flex-fill"></RouterView>
+            <div class="flex-fill">
+                <RouterView></RouterView>
+                <Footer></Footer>
+            </div>
         </div>
     </VApp>
 </template>

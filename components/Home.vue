@@ -8,10 +8,11 @@ let articles = []
 const theme = useTheme()
 const showPagination = ref(true)
 const pageCount = ref(1)
-const page = ref(2)
+const page = ref(1)
 onMounted(async ()=>{
     const res = await fetch('/document.json')
     articles = await res.json()
+    articles = articles.data
     if(articles.length <= 10) showedArticles.value = articles
     else {
         showedArticles.value = articles.slice(0,10)
